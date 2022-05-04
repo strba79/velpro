@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Velpro</string>
+    <string name="sign_up">Sign up</string>
+    <string name="not_user_sign_up">Not user? sign up..</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="city">City</string>
+    <string name="wat">WAT</string>
+    <string name="buyer_name">Buyer Name</string>
+    <string name="name">Name</string>
+    <string name="last_family_name">Last(Family)Name</string>
+    <string name="serial_number">Serial Number</string>
+    <string name="warehouse">WareHouse</string>
+    <string name="create_new">Create New</string>
+    <string name="edit_buyer">Edit Buyer</string>
+    <string name="log_in">Log in</string>
+    <string name="worker_name">Worker name</string>
+    <string name="assigned_worker">Assigned worker</string>
+</resources>

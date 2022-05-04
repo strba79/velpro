@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="rs.strba.veleprodaja.presentation.fragments.main.LoginFragment"
+        android:label="Velpro"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_createWorkerFragment"
+            app:destination="@id/createWorkerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="rs.strba.veleprodaja.presentation.fragments.main.RegistrationFragment"
+        android:label="Registration"
+        tools:layout="@layout/fragment_registration" />
+    <fragment
+        android:id="@+id/createWorkerFragment"
+        android:name="rs.strba.veleprodaja.presentation.fragments.CreateWorkerFragment"
+        android:label="Create Worker"
+        tools:layout="@layout/fragment_create_worker" />
+    <fragment
+        android:id="@+id/createBuyerFragment"
+        android:name="rs.strba.veleprodaja.presentation.fragments.CreateBuyerFragment"
+        android:label="Create buyer"
+        tools:layout="@layout/fragment_create_buyer" />
+    <fragment
+        android:id="@+id/viewWorkersFragment"
+        android:name="rs.strba.veleprodaja.presentation.fragments.workers.ViewWorkersFragment"
+        android:label="View Workers"
+        tools:layout="@layout/fragment_view_workers">
+        <action
+            android:id="@+id/action_viewWorkersFragment_to_workerFragment"
+            app:destination="@id/workerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewBuyersFragment"
+        android:name="rs.strba.veleprodaja.presentation.fragments.buyers.ViewBuyersFragment"
+        android:label="View Buyers"
+        tools:layout="@layout/fragment_view_buyers">
+        <action
+            android:id="@+id/action_viewBuyersFragment_to_buyerFragment"
+            app:destination="@id/buyerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/workerFragment"
+        android:name="rs.strba.veleprodaja.presentation.fragments.workers.WorkerFragment"
+        android:label="Worker"
+        tools:layout="@layout/fragment_worker" />
+    <fragment
+        android:id="@+id/buyerFragment"
+        android:name="rs.strba.veleprodaja.presentation.fragments.buyers.BuyerFragment"
+        android:label="fragment_buyer"
+        tools:layout="@layout/fragment_buyer" />
+</navigation>

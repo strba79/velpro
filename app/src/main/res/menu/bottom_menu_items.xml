@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_print"
+        android:title="New Worker"
+        android:icon="@drawable/ic_baseline_work" />
+    <item android:id="@+id/action_search"
+        android:title="Create Buyer"
+        android:icon="@drawable/ic_baseline_shopping_cart_checkout" />
+    <item android:id="@+id/action_view_workers"
+        android:title="View Workers"
+        android:icon="@drawable/ic_baseline_shopping_cart_checkout" />
+    <item android:id="@+id/action_view_buyers"
+        android:title="View Buyers"
+        android:icon="@drawable/ic_baseline_shopping_cart_checkout" />
+</menu>

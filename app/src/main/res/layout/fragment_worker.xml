@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.fragments.workers.WorkerFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+
+        <TextView
+            android:id="@+id/tvWorker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_alignParentStart="true"
+            android:text="Worker" />
+
+        <EditText
+            android:id="@+id/etBuyerName"
+            android:layout_width="150dp"
+            android:layout_below="@id/tvWorker"
+            android:layout_height="48dp" />
+
+        <TextView
+            android:id="@+id/tvBuyerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etBuyerName"
+            android:layout_alignParentStart="true"
+            android:text="@string/worker_name" />
+
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/tvBuyerName" />
+
+        <TextView
+            android:id="@+id/tvWAT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etLastName"
+            android:layout_alignParentStart="true"
+            android:text="@string/wat" />
+
+        <EditText
+            android:id="@+id/etCode"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/tvWAT"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tvCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etCode"
+            android:layout_alignParentStart="true"
+            android:text="@string/city" />
+
+        <EditText
+            android:id="@+id/etAssignedWorker"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/tvCode"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tvAssignedWorker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etAssignedWorker"
+            android:layout_alignParentStart="true"
+            android:text="@string/warehouse" />
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAssignedWorker"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:text="Save edit" />
+    </RelativeLayout>
+
+</FrameLayout>
