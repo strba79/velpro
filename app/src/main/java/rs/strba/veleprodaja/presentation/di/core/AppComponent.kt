@@ -15,17 +15,17 @@ import javax.inject.Singleton
 @Singleton
 @Component(modules = [AppModule::class, DatabaseModule::class, RepositoryModule::class, LocalDataModule::class])
 interface AppComponent {
-    fun idSubComponent(): VelProSubComponent.Factory
-    fun idSubComponentRegistration(): VelProSubComponentRegistrationFragment.FactoryRegistration
-    fun idSubComponentLogin(): VelProSubComponentLoginFragment.FactoryLogin
+    fun velProSubComponent(): VelProSubComponent.Factory
+    fun velProSubComponentRegistration(): VelProSubComponentRegistrationFragment.FactoryRegistration
+    fun velProSubComponentLogin(): VelProSubComponentLoginFragment.FactoryLogin
 
-    fun idSubComponentCreateWorker(): VelProSubComponentCreateWorkerFragment.FactoryCreateWorker
-    fun idSubComponentViewWorkers(): VelProSubComponentViewWorkersFragment.FactoryViewWorkers
-    fun idSubComponentWorker(): VelProSubComponentWorkerFragment.FactoryWorker
+    fun velProSubComponentCreateWorker(): VelProSubComponentCreateWorkerFragment.FactoryCreateWorker
+    fun velProSubComponentViewWorkers(): VelProSubComponentViewWorkersFragment.FactoryViewWorkers
+    fun velProSubComponentWorker(): VelProSubComponentWorkerFragment.FactoryWorker
 
-    fun idSubComponentCreateBuyer(): VelProSubComponentCreateBuyerFragment.FactoryCreateBuyer
-    fun idSubComponentViewBuyers(): VelProSubComponentViewBuyersFragment.FactoryViewBuyer
-    fun idSubComponentBuyer(): VelProSubComponentBuyerFragment.FactoryBuyer
+    fun velProSubComponentCreateBuyer(): VelProSubComponentCreateBuyerFragment.FactoryCreateBuyer
+    fun velProSubComponentViewBuyers(): VelProSubComponentViewBuyersFragment.FactoryViewBuyer
+    fun velProSubComponentBuyer(): VelProSubComponentBuyerFragment.FactoryBuyer
 
 
 }
