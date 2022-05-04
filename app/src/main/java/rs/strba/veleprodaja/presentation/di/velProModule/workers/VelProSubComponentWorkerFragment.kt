@@ -9,6 +9,6 @@ interface VelProSubComponentWorkerFragment {
     fun injectWorker(workersFragment: ViewWorkersFragment)
     @Subcomponent.Factory
     interface FactoryWorker{
-        fun create(): VelProSubComponentViewWorkersFragment
+        fun create(): VelProSubComponentWorkerFragment
     }
 }
