@@ -27,38 +27,38 @@ class MyApplication: Application(), ComponentInjector{
     }
 
     override fun createVelProSubComponent(): VelProSubComponent {
-        TODO("Not yet implemented")
+        return appComponent.velProSubComponent().create()
     }
 
     override fun createVelProSubComponentRegistration(): VelProSubComponentRegistrationFragment {
-        TODO("Not yet implemented")
+        return appComponent.velProSubComponentRegistration().create()
     }
 
     override fun createVelProSubComponentLogin(): VelProSubComponentLoginFragment {
-        TODO("Not yet implemented")
+        return appComponent.velProSubComponentLogin().create()
     }
 
     override fun createVelProSubComponentCreateWorker(): VelProSubComponentCreateWorkerFragment {
-        TODO("Not yet implemented")
+        return appComponent.velProSubComponentCreateWorker().create()
     }
 
     override fun createVelProSubComponentViewWorkers(): VelProSubComponentViewWorkersFragment {
-        TODO("Not yet implemented")
+        return appComponent.velProSubComponentViewWorkers().create()
     }
 
     override fun createVelProSubComponentWorker(): VelProSubComponentWorkerFragment {
-        TODO("Not yet implemented")
+        return appComponent.velProSubComponentWorker().create()
     }
 
     override fun createVelProSubComponentCreateBuyer(): VelProSubComponentCreateBuyerFragment {
-        TODO("Not yet implemented")
+        return appComponent.velProSubComponentCreateBuyer().create()
     }
 
     override fun createVelProSubComponentViewBuyers(): VelProSubComponentViewBuyersFragment {
-        TODO("Not yet implemented")
+        return appComponent.velProSubComponentViewBuyers().create()
     }
 
     override fun createVelProSubComponentBuyer(): VelProSubComponentBuyerFragment {
-        TODO("Not yet implemented")
+        return appComponent.velProSubComponentBuyer().create()
     }
 }
