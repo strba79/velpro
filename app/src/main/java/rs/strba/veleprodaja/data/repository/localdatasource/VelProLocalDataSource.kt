@@ -1,8 +1,8 @@
 package rs.strba.veleprodaja.data.repository.localdatasource
 
-import rs.strba.veleprodaja.data.db.enitetets.Buyer
-import rs.strba.veleprodaja.data.db.enitetets.User
-import rs.strba.veleprodaja.data.db.enitetets.Worker
+import rs.strba.veleprodaja.data.db.entities.Buyer
+import rs.strba.veleprodaja.data.db.entities.User
+import rs.strba.veleprodaja.data.db.entities.Worker
 
 interface VelProLocalDataSource {
     suspend fun getBuyersFromDB():List<Buyer>

@@ -1,4 +1,4 @@
-package rs.strba.veleprodaja.data.db.enitetets
+package rs.strba.veleprodaja.data.db.entities
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

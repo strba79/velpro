@@ -1,9 +1,9 @@
 package rs.strba.veleprodaja.data.repository.velproIMPL
 
 import rs.strba.veleprodaja.data.db.VelProDao
-import rs.strba.veleprodaja.data.db.enitetets.Buyer
-import rs.strba.veleprodaja.data.db.enitetets.User
-import rs.strba.veleprodaja.data.db.enitetets.Worker
+import rs.strba.veleprodaja.data.db.entities.Buyer
+import rs.strba.veleprodaja.data.db.entities.User
+import rs.strba.veleprodaja.data.db.entities.Worker
 import rs.strba.veleprodaja.data.repository.localdatasource.VelProLocalDataSource
 
 class VelProDataSourceIMPL(private val velProDao: VelProDao) : VelProLocalDataSource {
