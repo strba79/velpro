@@ -2,9 +2,10 @@ package rs.strba.veleprodaja.presentation.viewmodels.main
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import rs.strba.veleprodaja.domain.usecase.users.GetUser
+import rs.strba.veleprodaja.domain.usecase.users.GetUserUseCase
+import javax.inject.Inject
 
-class LoginFragmentViewModelFactory(private val getUser: GetUser): ViewModelProvider.Factory {
+class LoginFragmentViewModelFactory @Inject constructor(private val getUser: GetUserUseCase): ViewModelProvider.Factory {
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
         return LoginFragmentViewModel(getUser) as T
     }

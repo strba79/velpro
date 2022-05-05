@@ -23,7 +23,7 @@ class VelProRepositoryIMPL(private val velProLocalDataSource: VelProLocalDataSou
         velProLocalDataSource.saveBuyerToDb(buyer)
     }
 
-    override suspend fun getUser(): List<User> {
+    override suspend fun getUser(): User {
         return velProLocalDataSource.getUsersFromDB()
     }
 

@@ -11,7 +11,7 @@ interface VelProLocalDataSource {
     suspend fun getWorkersFromDB():List<Worker>
     suspend fun saveWorkerToDb(worker: Worker)
 
-    suspend fun getUsersFromDB():List<User>
+    suspend fun getUsersFromDB():User
     suspend fun saveUserToDb(user: User)
 
 }

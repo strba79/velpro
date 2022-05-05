@@ -26,5 +26,5 @@ interface VelProDao {
     suspend fun saveUserId(user: User )
 
     @Query(value="SELECT * FROM User")
-    suspend fun getUser():List<User>
+    suspend fun getUser():User
 }

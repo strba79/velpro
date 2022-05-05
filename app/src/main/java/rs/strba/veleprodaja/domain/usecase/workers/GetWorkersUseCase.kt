@@ -5,7 +5,7 @@ import rs.strba.veleprodaja.data.db.entities.Worker
 import rs.strba.veleprodaja.domain.repository.VelProRepository
 import javax.inject.Inject
 
-class GetWorkers @Inject constructor(private val velProRepository: VelProRepository) {
+class GetWorkersUseCase @Inject constructor(private val velProRepository: VelProRepository) {
     suspend fun getWorkers():List<Worker>{
         return velProRepository.getWorker()
     }

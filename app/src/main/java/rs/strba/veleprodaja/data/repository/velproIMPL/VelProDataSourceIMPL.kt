@@ -23,7 +23,7 @@ class VelProDataSourceIMPL(private val velProDao: VelProDao) : VelProLocalDataSo
         velProDao.saveWorkerId(worker)
     }
 
-    override suspend fun getUsersFromDB(): List<User> {
+    override suspend fun getUsersFromDB(): User {
         return velProDao.getUser()
     }
 
