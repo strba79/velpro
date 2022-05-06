@@ -24,12 +24,12 @@
         tools:layout="@layout/fragment_registration" />
     <fragment
         android:id="@+id/createWorkerFragment"
-        android:name="rs.strba.veleprodaja.presentation.fragments.CreateWorkerFragment"
+        android:name="rs.strba.veleprodaja.presentation.fragments.workers.CreateWorkerFragment"
         android:label="Create Worker"
         tools:layout="@layout/fragment_create_worker" />
     <fragment
         android:id="@+id/createBuyerFragment"
-        android:name="rs.strba.veleprodaja.presentation.fragments.CreateBuyerFragment"
+        android:name="rs.strba.veleprodaja.presentation.fragments.buyers.CreateBuyerFragment"
         android:label="Create buyer"
         tools:layout="@layout/fragment_create_buyer" />
     <fragment

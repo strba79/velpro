@@ -5,102 +5,110 @@
     android:layout_height="match_parent"
     tools:context=".presentation.fragments.workers.CreateWorkerFragment">
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/tvCreateWorker"
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
-            android:textStyle="bold"
-            android:textSize="25dp"
-            android:layout_alignParentStart="true"
-            android:text="New Worker" />
+            android:layout_gravity="center">
 
-        <EditText
-            android:id="@+id/etWorkerName"
-            android:layout_width="150dp"
-            android:layout_below="@id/tvCreateWorker"
-            android:layout_height="48dp" />
+            <TextView
+                android:id="@+id/tvCreateWorker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="15dp"
+                android:text="New Worker"
+                android:textSize="25dp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/tvWorkerName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/etWorkerName"
-            android:layout_alignParentStart="true"
-            android:text="Worker name" />
+            <EditText
+                android:id="@+id/etWorkerName"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_below="@id/tvCreateWorker" />
 
-        <EditText
-            android:id="@+id/etLastName"
-            android:layout_width="150dp"
-            android:layout_height="48dp"
-            android:layout_below="@id/tvWorkerName" />
+            <TextView
+                android:id="@+id/tvWorkerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etWorkerName"
+                android:layout_alignParentStart="true"
+                android:text="Worker name" />
 
-        <TextView
-            android:id="@+id/tvLastName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/etLastName"
-            android:layout_alignParentStart="true"
-            android:text="Last (Family) Name" />
+            <EditText
+                android:id="@+id/etLastName"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_below="@id/tvWorkerName" />
 
-        <EditText
-            android:id="@+id/etCode"
-            android:layout_width="150dp"
-            android:layout_height="48dp"
-            android:layout_below="@id/tvLastName"
-            android:layout_marginTop="10dp" />
+            <TextView
+                android:id="@+id/tvLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etLastName"
+                android:layout_alignParentStart="true"
+                android:text="Last (Family) Name" />
 
-        <TextView
-            android:id="@+id/tvCode"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/etCode"
-            android:layout_alignParentStart="true"
-            android:text="Serial number" />
+            <EditText
+                android:id="@+id/etCode"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_below="@id/tvLastName"
+                android:layout_marginTop="10dp" />
 
-        <EditText
-            android:id="@+id/etCity"
-            android:layout_width="150dp"
-            android:layout_height="48dp"
-            android:layout_below="@id/tvCode"
-            android:layout_marginTop="10dp" />
+            <TextView
+                android:id="@+id/tvCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etCode"
+                android:layout_alignParentStart="true"
+                android:text="Serial number" />
 
-        <TextView
-            android:id="@+id/tvCity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/etCity"
-            android:layout_alignParentStart="true"
-            android:text="City" />
+            <EditText
+                android:id="@+id/etCity"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_below="@id/tvCode"
+                android:layout_marginTop="10dp" />
 
-        <EditText
-            android:id="@+id/etWareHouse"
-            android:layout_width="150dp"
-            android:layout_height="48dp"
-            android:layout_below="@id/tvCity"
-            android:layout_marginTop="10dp" />
+            <TextView
+                android:id="@+id/tvCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etCity"
+                android:layout_alignParentStart="true"
+                android:text="City" />
 
-        <TextView
-            android:id="@+id/tvWareHouse"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/etWareHouse"
-            android:layout_alignParentStart="true"
-            android:text="Ware House" />
+            <EditText
+                android:id="@+id/etWareHouse"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_below="@id/tvCity"
+                android:layout_marginTop="10dp" />
 
-        <Button
-            android:id="@+id/btnCreate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tvWareHouse"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="10dp"
-            android:text="Create New" />
-    </RelativeLayout>
+            <TextView
+                android:id="@+id/tvWareHouse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etWareHouse"
+                android:layout_alignParentStart="true"
+                android:text="Ware House" />
+
+            <Button
+                android:id="@+id/btnCreate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvWareHouse"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:text="Create New" />
+        </RelativeLayout>
+    </ScrollView>
 
 </FrameLayout>
