@@ -1,5 +1,6 @@
 package rs.strba.veleprodaja.data.repository.velproIMPL
 
+import kotlinx.coroutines.flow.Flow
 import rs.strba.veleprodaja.data.db.VelProDao
 import rs.strba.veleprodaja.data.db.entities.Buyer
 import rs.strba.veleprodaja.data.db.entities.User
@@ -23,8 +24,8 @@ class VelProDataSourceIMPL(private val velProDao: VelProDao) : VelProLocalDataSo
         velProDao.saveWorkerId(worker)
     }
 
-    override suspend fun getUsersFromDB(): User {
-        return velProDao.getUser()
+    override suspend fun getUser(username: String, password: String): User {
+        return velProDao.getUser(username, password)
     }
 
     override suspend fun saveUserToDb(user: User) {

@@ -4,6 +4,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import kotlinx.coroutines.flow.Flow
 import rs.strba.veleprodaja.data.db.entities.Buyer
 import rs.strba.veleprodaja.data.db.entities.User
 import rs.strba.veleprodaja.data.db.entities.Worker
@@ -23,8 +24,8 @@ interface VelProDao {
     suspend fun getWorker():List<Worker>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun saveUserId(user: User )
+    suspend fun saveUserId(user: User)
 
-    @Query(value="SELECT * FROM User")
-    suspend fun getUser():User
+    @Query(value="SELECT * FROM User WHERE userName=:username AND password=:password")
+    suspend fun getUser(username:String, password:String): User
 }
