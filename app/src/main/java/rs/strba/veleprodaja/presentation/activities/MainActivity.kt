@@ -32,5 +32,31 @@ class MainActivity : AppCompatActivity() {
                 binding.bottomNavigation.visibility = View.VISIBLE
             }
         }
+
+        binding.bottomNavigation.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.action_create_worker -> createWorker(navController)
+                R.id.action_view_workers -> viewWorkers(navController)
+                R.id.action_create_buyer -> createBuyer(navController)
+                R.id.action_view_buyers -> viewBuyers(navController)
+            }
+            true
+        }
+    }
+
+    private fun viewBuyers(navController: NavController) {
+        TODO("Not yet implemented")
+    }
+
+    private fun createBuyer(navController: NavController) {
+        TODO("Not yet implemented")
+    }
+
+    private fun viewWorkers(navController: NavController) {
+        TODO("Not yet implemented")
+    }
+
+    private fun createWorker(navController: NavController) {
+        TODO("Not yet implemented")
     }
 }
