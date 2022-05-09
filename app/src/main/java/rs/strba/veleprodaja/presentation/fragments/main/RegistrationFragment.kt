@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import rs.strba.veleprodaja.MyApplication
@@ -54,6 +55,7 @@ class RegistrationFragment : Fragment() {
                     binding.etUsername.text.toString(),
                     binding.etPassword.text.toString()
                 )
+                Toast.makeText(context,"User created",Toast.LENGTH_LONG).show()
             }
         }
     }
