@@ -45,18 +45,18 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun viewBuyers(navController: NavController) {
-        TODO("Not yet implemented")
+        navController.navigate(R.id.viewBuyersFragment)
     }
 
     private fun createBuyer(navController: NavController) {
-        TODO("Not yet implemented")
+        navController.navigate(R.id.createBuyerFragment)
     }
 
     private fun viewWorkers(navController: NavController) {
-        TODO("Not yet implemented")
+        navController.navigate(R.id.viewWorkersFragment)
     }
 
     private fun createWorker(navController: NavController) {
-        TODO("Not yet implemented")
+        navController.navigate(R.id.createWorkerFragment)
     }
 }
