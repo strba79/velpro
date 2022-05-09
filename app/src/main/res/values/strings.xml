@@ -20,4 +20,5 @@
     <string name="create_buyer">Create Buyer</string>
     <string name="new_worker">New Worker</string>
     <string name="view_buyers">View Buyers</string>
+    <string name="no_data">No Data</string>
 </resources>
