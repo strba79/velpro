@@ -16,4 +16,8 @@
     <string name="log_in">Log in</string>
     <string name="worker_name">Worker name</string>
     <string name="assigned_worker">Assigned worker</string>
+    <string name="view_workers">View Workers</string>
+    <string name="create_buyer">Create Buyer</string>
+    <string name="new_worker">New Worker</string>
+    <string name="view_buyers">View Buyers</string>
 </resources>
